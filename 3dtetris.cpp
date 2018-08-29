@@ -1,4 +1,4 @@
-#include <GL/gl.h>		   // Open Graphics Library (OpenGL) header
+#include <GL/gl.h>	   // Open Graphics Library (OpenGL) header
 #include <GL/glut.h>	   // The GL Utility Toolkit (GLUT) Header
 #include <GL/glu.h>
 #include <windows.h>	   // Standard header for MS Windows applications
@@ -1497,16 +1497,16 @@ void specialFunc(int key, int x, int y) {
 }
 
 int main(int argc, char **argv) {
-	glutInit(&argc, argv);                  	                			    // GLUT initialization
-	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH );					// Display Mode
+	glutInit(&argc, argv);                  	                // GLUT initialization
+	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH );	// Display Mode
 	glutInitWindowPosition (100, 250);
-	glutInitWindowSize(600,600);												// set window size
-	glutCreateWindow("Cube Constructor - 3D");									// create Window
+	glutInitWindowSize(600,600);					// set window size
+	glutCreateWindow("Cube Constructor - 3D");			// create Window
 
 	init();
 	glutDisplayFunc(display);													// register Display Function
 	glutKeyboardFunc(keyboardFunc);
 	glutSpecialFunc(specialFunc);
 	glutMainLoop();																// run GLUT mainloop
-return 0;
+	return 0;
 }
